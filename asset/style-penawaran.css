@@ -1,0 +1,11 @@
+.header-logo {
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    margin: auto;
+}
+
+.img-logo {
+    text-align: left;
+    width: 25%;
+}
