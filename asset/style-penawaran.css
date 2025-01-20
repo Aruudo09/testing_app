@@ -1,3 +1,4 @@
+
 .header-logo {
     /* display: flex;
     justify-content: center; */
@@ -5,7 +6,41 @@
     margin: auto;
 }
 
-.img-logo {
-    text-align: left;
-    width: 25%;
+.card-img {
+    position: relative;
+    width: 20%;
 }
+
+.customer-label {
+    position: relative;
+    margin-top: 15px;
+    margin-left: -8px;
+}
+
+.customer-table {
+    margin-left: 2px;
+}
+
+.customer-table table {
+    width: 70%; /* Sesuaikan lebar tabel */
+    border-collapse: collapse; /* Menggabungkan border */
+    border: 1px solid #000; /* Border tabel */
+}
+
+.customer-table table th{
+    border: 1px solid #000;
+}
+
+.crew-border {
+    margin-top: 15px;
+    border: 1px solid;
+    height: 350px;
+}
+
+.crew-foto {
+    margin: 35px;
+    border: 1px solid;
+    height: 120px;
+    width: 110px;
+}
+

@@ -22,6 +22,7 @@ class Mt_cv_crew extends CI_Controller
         // Inisialisasi mPDF
         $mpdf = new \Mpdf\Mpdf([
             'setAutoTopMargin' => 'stretch', // Atur margin atas otomatis
+            'format' => 'A4'
         ]);
 
         // Atur header HTML
@@ -30,10 +31,12 @@ class Mt_cv_crew extends CI_Controller
         <h4>CV CREW MORENA TRANS</h4>        
     </div>');
 
-        // Atur footer HTML
-        $mpdf->SetHTMLFooter('<div class="footer-logo">
-            <img src="C:/xampp/htdocs/testing_app/asset/Footer.png" alt="footer pengenumroh">
-        </div>');
+        // Menambahkan background image
+        $mpdf->SetDefaultBodyCSS('background', "url('C:\xampp\htdocs\testing_app\asset\BG CV Driver.jpg')");
+        $mpdf->SetDefaultBodyCSS('background-image-resize', 4); // Resize sesuai rasio aspek halaman
+
+        // $mpdf->SetDefaultBodyCSS('background', "C:\xampp\htdocs\testing_app\asset\BG CV Driver.jpg");
+        // $mpdf->SetDefaultBodyCSS('background-image-resize', 6);
 
         // Tulis stylesheet ke PDF terlebih dahulu
         $mpdf->WriteHTML($stylesheet, \Mpdf\HTMLParserMode::HEADER_CSS);
