@@ -5,12 +5,24 @@ require_once __DIR__ . '/../../vendor/autoload.php';
 
 class Mt_cv_crew extends CI_Controller
 {
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('M_mt_cv_crew');
+        // $this->M_login->getsecurity();
+    }
+
     public function generate_mpdf()
     {
+        $booking = $this->M_mt_cv_crew->getBooking();
+        $crew = $this->M_mt_cv_crew->getCrew();
+
         // Data yang dikirim ke view
         $data = [
             'title' => 'PDF Title',
-            'message' => 'This is a dynamically generated PDF.'
+            'message' => 'This is a dynamically generated PDF.',
+            'booking' => $booking,
+            'crew' => $crew
         ];
 
         // Muat view dengan data
@@ -32,8 +44,9 @@ class Mt_cv_crew extends CI_Controller
     </div>');
 
         // Menambahkan background image
-        $mpdf->SetDefaultBodyCSS('background', "url('C:\xampp\htdocs\testing_app\asset\BG CV Driver.jpg')");
-        $mpdf->SetDefaultBodyCSS('background-image-resize', 4); // Resize sesuai rasio aspek halaman
+        // $mpdf->SetDefaultBodyCSS('background', "url('C:\xampp\htdocs\testing_app\asset\BG CV Driver.jpg')");
+        // $mpdf->SetDefaultBodyCSS('background', "url('http://localhost/testing_app/asset/BG CV Driver.jpg')");
+        // $mpdf->SetDefaultBodyCSS('background-image-resize', 6);
 
         // $mpdf->SetDefaultBodyCSS('background', "C:\xampp\htdocs\testing_app\asset\BG CV Driver.jpg");
         // $mpdf->SetDefaultBodyCSS('background-image-resize', 6);
