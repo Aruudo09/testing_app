@@ -1,46 +1,56 @@
-
-.header-logo {
-    /* display: flex;
-    justify-content: center; */
-    text-align: center;
-    margin: auto;
+body {
+    /* background-image: url('asset/bg_cv_driver.png') no-repeat;
+    background-size: cover; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.card-img {
-    position: relative;
-    width: 20%;
+table.data-master {
+    padding-top: 180px;
+    padding-bottom: 50px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
 }
 
-.customer-label {
-    position: relative;
-    margin-top: 15px;
-    margin-left: -8px;
+table.data-master tr td:nth-child(2) {
+    padding-left: 25px;
 }
 
-.customer-table {
-    margin-left: 2px;
+.crew-container .crew{
+    height: 206.2px;
+    width: 100%;
+    background-image: url('asset/bg_putih.png') no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.customer-table table {
-    width: 70%; /* Sesuaikan lebar tabel */
-    border-collapse: collapse; /* Menggabungkan border */
-    border: 1px solid #000; /* Border tabel */
+.crew-container .image-crew {
+    width: 170px;
+    height: 170px;
+    float: left;
+    border-radius: 25px;
+    margin-left: 25px;
+    margin-top: 18px;
 }
 
-.customer-table table th{
-    border: 1px solid #000;
+.crew-container .driver-data {
+    height: 150px;
+    margin-top: 10px;
+    margin-right: 30px;
+    float: right;
 }
 
-.crew-border {
-    margin-top: 15px;
-    border: 1px solid;
-    height: 350px;
+.crew-container .driver-data table{
+    color: black;
+    margin: 15px;
 }
 
-.crew-foto {
-    margin: 35px;
-    border: 1px solid;
-    height: 120px;
-    width: 110px;
+.crew-container .driver-data table td{
+    padding-bottom: 10px;
 }
 
+.crew-container .driver-data table tr td:nth-child(2){
+    padding-left: 10px;
+}

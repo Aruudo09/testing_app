@@ -29,19 +29,13 @@ class Mt_cv_crew extends CI_Controller
         $html = $this->load->view('mt_cv_crew', $data, true);
 
         // Muat stylesheet
-        $stylesheet = file_get_contents('http://localhost/testing_app/asset/style-penawaran.css'); // Pastikan path valid
+        $stylesheet = file_get_contents(base_url('asset/style-penawaran.css')); // Pastikan path valid
 
         // Inisialisasi mPDF
         $mpdf = new \Mpdf\Mpdf([
             'setAutoTopMargin' => 'stretch', // Atur margin atas otomatis
             'format' => 'A4'
         ]);
-
-        // Atur header HTML
-        $mpdf->SetHTMLHeader('
-    <div class="header-logo">
-        <h4>CV CREW MORENA TRANS</h4>        
-    </div>');
 
         // Menambahkan background image
         // $mpdf->SetDefaultBodyCSS('background', "url('C:\xampp\htdocs\testing_app\asset\BG CV Driver.jpg')");

@@ -9,54 +9,120 @@
 </head>
 
 <body>
-    <!-- <div class="tes"></div> -->
-    <div class="card-img">
-        <img src="C:\xampp\htdocs\testing_app\asset\mt.png" alt="morenaTrans">
-    </div>
 
-    <div class="customer-label">
-        <ol>
-            <li>Nama Customer</li>
-            <li>No Telepon Customer</li>
-            <li>PIC Perjalanan</li>
-            <li>No Telepon PIC Perjalanan</li>
-        </ol>
-    </div>
+    <table class="data-master">
+        <tr>
+            <td>Nama Customer</td>
+            <td>:</td>
+            <td>Aldo Kurniawan</td>
+        </tr>
+        <tr>
+            <td>No. Telepon Customer</td>
+            <td>:</td>
+            <td>089602984422</td>
+        </tr>
+        <tr>
+            <td>PIC Perjalanan</td>
+            <td>:</td>
+            <td>Aldo Kurniawan</td>
+        </tr>
+        <tr>
+            <td>No. Telepon PIC Perjalanan</td>
+            <td>:</td>
+            <td>089682824545</td>
+        </tr>
+    </table>
 
-    <img src="C:\xampp\htdocs\testing_app\asset\BG CV Driver.jpg" alt="">
-
-    <div class="customer-table">
-        <table>
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>Periode Sewa</th>
-                    <th>Nopol</th>
-                    <th>Jenis Armada</th>
-                    <th>Tujuan</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="crew-border">
-        <div class="crew-foto">
-            <img src="C:\xampp\htdocs\testing_app\asset\mt.png" alt="">
+    <div class="crew-container">
+        <div class="crew">
+            <div class="image-crew">
+                <img src="<?= base_url('asset/driver.jpg') ?>" alt="">
+            </div>
+            <div class="driver-data">
+                <table>
+                    <tr>
+                        <td>Nama Lengkap</td>
+                        <td>:</td>
+                        <td>Aldo Kurniawan</td>
+                    </tr>
+                    <tr>
+                        <td>Nama Panggilan</td>
+                        <td>:</td>
+                        <td>Aldo</td>
+                    </tr>
+                    <tr>
+                        <td>Jabatan</td>
+                        <td>:</td>
+                        <td>DRIVER</td>
+                    </tr>
+                    <tr>
+                        <td>Tempat Tanggal Lahir</td>
+                        <td>:</td>
+                        <td>17-12-2000</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-
-        <div class="crew-data">
-            <ol>
-                <li>Nama Lengkap</li>
-                <li>Nama Panggilan</li>
-                <li>Jabatan</li>
-                <li>Tempat Tanggal Lahir</li>
-            </ol>
+        <div class="crew">
+            <div class="image-crew">
+                <img src="<?= base_url('asset/driver.jpg') ?>" alt="">
+            </div>
+            <div class="driver-data">
+                <table>
+                    <tr>
+                        <td>Nama Lengkap</td>
+                        <td>:</td>
+                        <td>Aldo Kurniawan</td>
+                    </tr>
+                    <tr>
+                        <td>Nama Panggilan</td>
+                        <td>:</td>
+                        <td>Aldo</td>
+                    </tr>
+                    <tr>
+                        <td>Jabatan</td>
+                        <td>:</td>
+                        <td>DRIVER</td>
+                    </tr>
+                    <tr>
+                        <td>Tempat Tanggal Lahir</td>
+                        <td>:</td>
+                        <td>17-12-2000</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="crew">
+            <div class="image-crew">
+                <img src="<?= base_url('asset/driver.jpg') ?>" alt="">
+            </div>
+            <div class="driver-data">
+                <table>
+                    <tr>
+                        <td>Nama Lengkap</td>
+                        <td>:</td>
+                        <td>Aldo Kurniawan</td>
+                    </tr>
+                    <tr>
+                        <td>Nama Panggilan</td>
+                        <td>:</td>
+                        <td>Aldo</td>
+                    </tr>
+                    <tr>
+                        <td>Jabatan</td>
+                        <td>:</td>
+                        <td>DRIVER</td>
+                    </tr>
+                    <tr>
+                        <td>Tempat Tanggal Lahir</td>
+                        <td>:</td>
+                        <td>17-12-2000</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
+
+</body>
 
 </html>
