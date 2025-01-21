@@ -16,12 +16,16 @@ class Mt_cv_crew extends CI_Controller
     {
         $booking = $this->M_mt_cv_crew->getBooking();
 
+
         // Inisialisasi mPDF di luar loop
         $mpdf = new \Mpdf\Mpdf([
             'setAutoTopMargin' => 'stretch', // Atur margin atas otomatis
             'setAutoBottomMargin' => 'stretch',
             'format' => 'A4'
         ]);
+
+        $h = $mpdf->hPt;
+        $w = $mpdf->wPt;
 
         // Muat stylesheet
         $stylesheet = file_get_contents(base_url('asset/style-penawaran.css')); // Pastikan path valid

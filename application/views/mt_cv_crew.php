@@ -10,33 +10,64 @@
 
 <body>
 
-    <table class="data-master">
-        <tr>
-            <td>Nama Customer</td>
-            <td>:</td>
-            <td><?= $booking['nama_cust'] ?></td>
-        </tr>
-        <tr>
-            <td>Nopol</td>
-            <td>:</td>
-            <td><?= $booking['nopol'] ?></td>
-        </tr>
-        <tr>
-            <td>No. Telepon Customer</td>
-            <td>:</td>
-            <td><?= $booking['telp_cust'] ?></td>
-        </tr>
-        <tr>
-            <td>PIC Perjalanan</td>
-            <td>:</td>
-            <td><?= $booking['pic'] ?></td>
-        </tr>
-        <tr>
-            <td>No. Telepon PIC Perjalanan</td>
-            <td>:</td>
-            <td><?= $booking['telp_cust'] ?></td>
-        </tr>
-    </table>
+    <div class="container-table1">
+        <table class="data-master1">
+            <tr>
+                <td style="vertical-align: top;">Nama Customer</td>
+                <td style="vertical-align: top;">:</td>
+                <td><?= $booking['nama_cust'] ?></td>
+            </tr>
+            <tr>
+                <td>Nopol</td>
+                <td>:</td>
+                <td><?= $booking['nopol'] ?></td>
+            </tr>
+            <tr>
+                <td>No. Telepon Customer</td>
+                <td>:</td>
+                <td><?= $booking['telp_cust'] ?></td>
+            </tr>
+            <tr>
+                <td>PIC Perjalanan</td>
+                <td>:</td>
+                <td><?= $booking['pic'] ?></td>
+            </tr>
+            <tr>
+                <td>No. Telepon PIC Perjalanan</td>
+                <td style="vertical-align: top;">:</td>
+                <td style="vertical-align: top;"><?= $booking['telp_cust'] ?></td>
+            </tr>
+        </table>
+    </div>
+    <div class="container-table2">
+        <table class="data-master1">
+            <tr>
+                <td style="vertical-align: top;">Tujuan</td>
+                <td style="vertical-align: top;">:</td>
+                <td><?= $booking['nama_cust'] ?></td>
+            </tr>
+            <tr>
+                <td>PIC Perjalanan</td>
+                <td>:</td>
+                <td><?= $booking['nopol'] ?></td>
+            </tr>
+            <tr>
+                <td>No Tlp PIC Perjalanan</td>
+                <td>:</td>
+                <td><?= $booking['telp_cust'] ?></td>
+            </tr>
+            <tr>
+                <td>Type Kendaraan</td>
+                <td>:</td>
+                <td><?= $booking['pic'] ?></td>
+            </tr>
+            <tr>
+                <td>Nopol</td>
+                <td>:</td>
+                <td><?= $booking['telp_cust'] ?></td>
+            </tr>
+        </table>
+    </div>
 
     <div class="crew-container">
         <?php foreach ($crews as $crew) { ?>
