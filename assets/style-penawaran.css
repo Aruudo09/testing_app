@@ -4,15 +4,11 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.header-boy {
-    margin-bottom: 180px;
-}
-
 table.data-master {
-    /* padding-top: 180px; */
+    padding-top: 180px;
     padding-bottom: 50px;
     color: #fff;
-    font-size: 12px;
+    font-size: 17px;
     font-weight: bold;
 }
 
@@ -21,10 +17,9 @@ table.data-master tr td:nth-child(2) {
 }
 
 .crew-container .crew{
-    padding: 0.5px;
     height: 206.2px;
     width: 100%;
-    background-image: url('bg_putih.png');
+    background-image: url('asset/bg_putih.png') no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
