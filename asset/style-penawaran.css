@@ -8,15 +8,34 @@ body {
     margin-bottom: 180px;
 }
 
-table.data-master {
+.container-table1 {
+    float: left;
+    width: 50%;
+}
+
+.container-table2 {
+    float: left;
+    width: 50%;
+}
+
+table.data-master1 {
     /* padding-top: 180px; */
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     color: #fff;
     font-size: 12px;
     font-weight: bold;
+    display: inline;
 }
 
-table.data-master tr td:nth-child(2) {
+table.data-master1 tr td:nth-child(2) {
+    padding-left: 25px;
+}
+
+table.data-master2 {
+    float: right;
+}
+
+table.data-master2 tr td:nth-child(2) {
     padding-left: 25px;
 }
 
