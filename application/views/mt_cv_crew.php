@@ -40,7 +40,7 @@
         </table>
     </div>
     <div class="container-table2">
-        <table class="data-master1">
+        <table class="data-master2">
             <tr>
                 <td style="vertical-align: top;">Tujuan</td>
                 <td style="vertical-align: top;">:</td>
@@ -73,7 +73,7 @@
         <?php foreach ($crews as $crew) { ?>
             <div class="crew">
                 <div class="image-crew">
-                    <img src="<?= base_url('asset/' . $crew->foto) ?>" alt="">
+                    <img src="<?= base_url('assets/driver.jpg') ?>" alt="">
                 </div>
                 <div class="driver-data">
                     <table>
